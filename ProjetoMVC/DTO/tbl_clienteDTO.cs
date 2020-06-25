@@ -10,45 +10,68 @@ namespace ProjetoMVC.DTO
     class tbl_clienteDTO
     {
         private int id_cliente, tp_usuario;
-        private string nome_cliente, sobrenome_cliente, email_cliente, senha_cliente, cpf_cliente;
+        private int? cpf_cliente;
+        private string nome_cliente, nome_mae;
 
         public int Id_cliente { get => id_cliente; set => id_cliente = value; }
         public int Tp_usuario { get => tp_usuario; set => tp_usuario = value; }
-        public string Nome_cliente { get => nome_cliente; set => nome_cliente = value; }
-        public string Sobrenome_cliente { get => sobrenome_cliente; set => sobrenome_cliente = value; }
-        public string Cpf_cliente { get => cpf_cliente; set => cpf_cliente = value; }
-        public string Email_cliente
-        {
+        public string Nome_cliente {
             set
             {
                 if (value != string.Empty)
                 {
-                    this.email_cliente = value;
+                    this.nome_cliente = value;
                 }
                 else
                 {
-                    throw new Exception("O campo email é obrigatório.");
+                    throw new Exception("O campo nome é obrigatório.");
                 }
             }
 
-            get { return this.email_cliente; }
+            get { return this.nome_cliente; }
         }
 
-        public string Senha_cliente
-        {
+       
+
+
+        public string Nome_mae {
             set
             {
                 if (value != string.Empty)
                 {
-                    this.senha_cliente = value;
+
+                    this.nome_mae = value;
                 }
                 else
                 {
-                    throw new Exception("O campo senha é obrigatório.");
+                    throw new Exception("O nome da mãe é obrigatório.");
                 }
             }
 
-            get { return this.senha_cliente; }
+            get { return this.nome_mae; }
+        }
+
+        public int? Cpf_cliente {
+            set
+            {
+                if (value != null)
+                {
+
+                    this.cpf_cliente = value;
+                }
+                else
+                {
+                    throw new Exception("O campo CPF é obrigatório.");
+                }
+            }
+
+            get { return this.cpf_cliente; }
         }
     }
+
+
+   
+       
+        
+    
 }

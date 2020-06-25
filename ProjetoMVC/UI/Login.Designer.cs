@@ -29,74 +29,83 @@
         private void InitializeComponent()
         {
             this.btn_login = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lbl_email = new System.Windows.Forms.Label();
-            this.lbl_password = new System.Windows.Forms.Label();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_pwd = new System.Windows.Forms.TextBox();
+            this.lbl_cpf = new System.Windows.Forms.Label();
+            this.lbl_nome = new System.Windows.Forms.Label();
+            this.txtCpfA11 = new System.Windows.Forms.TextBox();
+            this.txtNomeA11 = new System.Windows.Forms.TextBox();
+            this.txtNomeMaeA11 = new System.Windows.Forms.TextBox();
+            this.lbl_mae = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(28, 156);
+            this.btn_login.Location = new System.Drawing.Point(164, 201);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(173, 58);
+            this.btn_login.Size = new System.Drawing.Size(98, 33);
             this.btn_login.TabIndex = 0;
-            this.btn_login.Text = "button1";
+            this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // button2
+            // lbl_cpf
             // 
-            this.button2.Location = new System.Drawing.Point(223, 156);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 58);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lbl_cpf.AutoSize = true;
+            this.lbl_cpf.Location = new System.Drawing.Point(25, 24);
+            this.lbl_cpf.Name = "lbl_cpf";
+            this.lbl_cpf.Size = new System.Drawing.Size(30, 13);
+            this.lbl_cpf.TabIndex = 2;
+            this.lbl_cpf.Text = "CPF:";
             // 
-            // lbl_email
+            // lbl_nome
             // 
-            this.lbl_email.AutoSize = true;
-            this.lbl_email.Location = new System.Drawing.Point(25, 19);
-            this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(35, 13);
-            this.lbl_email.TabIndex = 2;
-            this.lbl_email.Text = "Email:";
+            this.lbl_nome.AutoSize = true;
+            this.lbl_nome.Location = new System.Drawing.Point(25, 73);
+            this.lbl_nome.Name = "lbl_nome";
+            this.lbl_nome.Size = new System.Drawing.Size(85, 13);
+            this.lbl_nome.TabIndex = 3;
+            this.lbl_nome.Text = "Nome Completo:";
             // 
-            // lbl_password
+            // txtCpfA11
             // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(25, 72);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(41, 13);
-            this.lbl_password.TabIndex = 3;
-            this.lbl_password.Text = "Senha:";
+            this.txtCpfA11.Location = new System.Drawing.Point(28, 40);
+            this.txtCpfA11.Name = "txtCpfA11";
+            this.txtCpfA11.Size = new System.Drawing.Size(368, 20);
+            this.txtCpfA11.TabIndex = 4;
             // 
-            // txt_email
+            // txtNomeA11
             // 
-            this.txt_email.Location = new System.Drawing.Point(28, 35);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(368, 20);
-            this.txt_email.TabIndex = 4;
+            this.txtNomeA11.Location = new System.Drawing.Point(28, 89);
+            this.txtNomeA11.Name = "txtNomeA11";
+            this.txtNomeA11.Size = new System.Drawing.Size(368, 20);
+            this.txtNomeA11.TabIndex = 5;
             // 
-            // txt_pwd
+            // txtNomeMaeA11
             // 
-            this.txt_pwd.Location = new System.Drawing.Point(28, 88);
-            this.txt_pwd.Name = "txt_pwd";
-            this.txt_pwd.Size = new System.Drawing.Size(368, 20);
-            this.txt_pwd.TabIndex = 5;
+            this.txtNomeMaeA11.Location = new System.Drawing.Point(28, 138);
+            this.txtNomeMaeA11.Name = "txtNomeMaeA11";
+            this.txtNomeMaeA11.Size = new System.Drawing.Size(368, 20);
+            this.txtNomeMaeA11.TabIndex = 7;
+            // 
+            // lbl_mae
+            // 
+            this.lbl_mae.AutoSize = true;
+            this.lbl_mae.Location = new System.Drawing.Point(25, 122);
+            this.lbl_mae.Name = "lbl_mae";
+            this.lbl_mae.Size = new System.Drawing.Size(77, 13);
+            this.lbl_mae.TabIndex = 6;
+            this.lbl_mae.Text = "Nome da Mãe:";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 236);
-            this.Controls.Add(this.txt_pwd);
-            this.Controls.Add(this.txt_email);
-            this.Controls.Add(this.lbl_password);
-            this.Controls.Add(this.lbl_email);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(425, 246);
+            this.Controls.Add(this.txtNomeMaeA11);
+            this.Controls.Add(this.lbl_mae);
+            this.Controls.Add(this.txtNomeA11);
+            this.Controls.Add(this.txtCpfA11);
+            this.Controls.Add(this.lbl_nome);
+            this.Controls.Add(this.lbl_cpf);
             this.Controls.Add(this.btn_login);
             this.Name = "Login";
             this.Text = "Login";
@@ -108,10 +117,11 @@
         #endregion
 
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.Label lbl_password;
-        private System.Windows.Forms.TextBox txt_email;
-        private System.Windows.Forms.TextBox txt_pwd;
+        private System.Windows.Forms.Label lbl_cpf;
+        private System.Windows.Forms.Label lbl_nome;
+        private System.Windows.Forms.TextBox txtCpfA11;
+        private System.Windows.Forms.TextBox txtNomeA11;
+        private System.Windows.Forms.TextBox txtNomeMaeA11;
+        private System.Windows.Forms.Label lbl_mae;
     }
 }
